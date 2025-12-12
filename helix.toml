@@ -1,0 +1,24 @@
+# Helix repository configuration
+#
+# This file configures Helix behavior for this repository.
+# Settings here override global settings in ~/.helix.toml
+
+[user]
+# Author information for commits
+# Uncomment and set these, or use environment variables:
+#   HELIX_AUTHOR_NAME, HELIX_AUTHOR_EMAIL
+# name = "Your Name"
+# email = "you@example.com"
+
+
+[ignore]
+# Additional patterns to ignore (beyond .gitignore)
+patterns = [
+    "*.log",
+    "*.tmp",
+    "*.swp",
+    ".DS_Store",
+    ".helix/*",
+    ".git/",
+    "target"
+]
