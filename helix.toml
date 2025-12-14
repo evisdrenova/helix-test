@@ -7,18 +7,19 @@
 # Author information for commits
 # Uncomment and set these, or use environment variables:
 #   HELIX_AUTHOR_NAME, HELIX_AUTHOR_EMAIL
-# name = "Your Name"
-# email = "you@example.com"
+name = "Your Name"
+email = "you@example.com"
 
+
+[remotes]
+origin_pull = "git@github.com:evisdrenova/helix-test.git"
+origin_push = "git@github.com:evisdrenova/helix-test.git"
 
 [ignore]
-# Additional patterns to ignore (beyond .gitignore)
 patterns = [
-    "*.log",
+    "target/",
     "*.tmp",
-    "*.swp",
-    ".DS_Store",
-    ".helix/*",
-    ".git/",
-    "target"
+    "*.log",
+    ".helix/",
+    ".git/"
 ]
